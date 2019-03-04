@@ -1,0 +1,118 @@
+.safeContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 外层容器
+.gridContent {
+    background: #ccc;
+    display: grid;
+    grid-template-areas: "header header header" "sidebar main main " "footer footer footer ";
+}
+
+// header
+.header {
+    margin: 30px 0;
+    grid-area: header;
+}
+
+.header li {
+    padding: 10px 80px;
+    border-top: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    list-style: none;
+}
+
+.header li:first-child {
+    border-left: 2px solid #fff;
+}
+
+.header li:last-child {
+    border-right: 2px solid #fff;
+}
+
+.header li:hover {
+    background-color: #fff;
+}
+
+.header li:hover a {
+    color: #000;
+    font-weight: bold;
+}
+
+.header ul {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+header li a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sideBar {
+    background-color: rgb(253, 17, 17);
+    grid-area: sidebar;
+    li {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 50px;
+        justify-items: center;
+        align-items: center;
+        &:hover {
+            background-color: aqua;
+        }
+    }
+    a {
+        margin: 10px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+}
+
+.mainContent {
+    background-color: rgb(238, 255, 0);
+    grid-area: main;
+}
+
+.card {
+    // justify-content: center;
+    margin: 30px auto;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "cardTitle cardAuthor" "cardImg cardImg" "cardContent cardContent";
+    div {
+        border: 1px solid #ccc;
+    }
+}
+
+.cardTitle{
+  padding: 10px;
+  grid-area: cardTitle;
+} 
+.cardAuthor{
+  grid-area:cardAuthor;
+  img{
+    width: 80%;
+    border-radius: 50%;
+  }
+}
+.cardImg{
+  grid-area: cardImg;
+  img{
+    width: 100%;
+  }
+}
+.cardContent{
+  grid-area: cardContent;
+}
+.footer {
+    background-color: rgb(100, 100, 100);
+    grid-area: footer;
+}

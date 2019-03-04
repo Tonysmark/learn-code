@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaterilazeSandbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="blue z-depth-3">
+    <div class="container nav-wrapper">
+      <a href="" class="brand-logo">LOGO</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a href="http://">首页</a>
+        </li>
+        <li>
+          <a href="http://">关于我</a>
+        </li>
+        <li>
+          <a href="http://">联系我</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <br>
+  <br>
+  <br>
+
+
+  <nav class="orange z-depth-3">
+    <div class="container nav-wrapper">
+      <a href="" class="brand-logo right">Right LOGO</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>
+          <a href="http://">首页</a>
+        </li>
+        <li>
+          <a href="http://">关于我</a>
+        </li>
+        <li>
+          <a href="http://">联系我</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <nav class="red z-depth-3">
+    <div class="container nav-wrapper">
+      <a href="" class="brand-logo center">Center LOGO</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>
+          <a href="http://">首页</a>
+        </li>
+        <li>
+          <a href="http://">关于我</a>
+        </li>
+        <li>
+          <a href="http://">联系我</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 下拉菜单 -->
+  <br>
+  <br>
+  <br>
+  <!-- 这里是data-actives -->
+
+  <ul id="dropdown1" class="dropdown-content" style="margin-top:70px;">
+    <li>
+      <a href="http://">one</a>
+    </li>
+    <li>
+      <a href="http://">two</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="http://">three</a>
+    </li>
+  </ul>
+
+  <nav class="red z-depth-3">
+    <div class="container nav-wrapper">
+      <a href="" class="brand-logo center">Center LOGO</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>
+          <a href="http://">首页</a>
+        </li>
+        <li>
+          <a href="http://">关于我</a>
+        </li>
+        <li>
+          <!-- data-actives 使得HTML去寻找一个里面内容(dropdown1)这样的ID -->
+          <a href="" class="dropdown-button" data-activates="dropdown1">Dropdown
+            <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a href="http://">联系我</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <br>
+  <br>
+  <br>
+
+  <nav class="black z-depth-3">
+    <div class="container nav-wrapper">
+      <a href="" class="brand-logo">LOGO</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a href="">
+            <i class="material-icons">search</i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="material-icons">refresh</i>
+            Link with Left Icon
+          </a>
+        </li>
+        <li>
+          <a href="" class="btn waves-effect waves-light">
+            Button
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 搜索 -->
+
+  <br>
+  <br>
+  <br>
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search">
+            <i class="material-icons">search</i>
+          </label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- 移动端的折叠效果 -->
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="" class="brand-logo">Mobile Collapse</a>
+      <a href="" class="button-collapse" data-activates="mobile-demo">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="">home</a>
+        </li>
+        <li>
+          <a href="">home</a>
+        </li>
+        <li>
+          <a href="">home</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="">home</a>
+        </li>
+        <li>
+          <a href="">home</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="">home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <!-- 列表收集？ -->
+    <h1>COLLECTIONS/LIST</h1>
+    <ul class="collection">
+      <li class="collection-item">item1</li>
+      <li class="collection-item">item2</li>
+      <li class="collection-item">item3</li>
+    </ul>
+    <!-- links collection -->
+    <div class="collection">
+      <a href="" class="collection-item">item 1</a>
+      <a href="" class="collection-item">item 2</a>
+      <a href="" class="collection-item">item 3</a>
+      <a href="" class="collection-item">item 4</a>
+    </div>
+
+    <!-- link with header -->
+
+    <ul class="collection with-header">
+      <li class="collection-item">
+        <h4>Header</h4>
+      </li>
+      <li class="collection-item">item2</li>
+      <li class="collection-item">item3</li>
+    </ul>
+
+
+    <h1>ICON COLLECTION</h1>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle">folder</i>
+        <span class="title">titile</span>
+        <p>First Line
+          <br> Second one
+        </p>
+        <a href="" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle green">insert_chart</i>
+        <span class="title">titile</span>
+        <p>First Line
+          <br> Second one
+        </p>
+        <a href="" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+    </ul>
+
+    <h1>PAGINATION 页码</h1>
+    <!--页码-->
+
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="">
+          <i class="material-icons">chevron_left</i>
+        </a>
+      </li>
+      <li class="hoverable waves-effect active">
+        <a href="">1</a>
+      </li>
+      <li class="hoverable waves-effect">
+        <a href="">2</a>
+      </li>
+      <li class="hoverable waves-effect">
+        <a href="">3</a>
+      </li>
+      <li class="hoverable waves-effect">
+        <a href="">4</a>
+      </li>
+      <li class="hoverable waves-effect">
+        <a href="">5</a>
+      </li>
+      <li class="hoverable waves-effect">
+        <a href="">
+          <i class="material-icons">chevron_right</i>
+        </a>
+      </li>
+    </ul>
+
+    <h1>Breadcrumbs{层级关系}</h1>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a href="" class="breadcrumb">first</a>
+          <a href="" class="breadcrumb">second</a>
+          <a href="" class="breadcrumb">third</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <h1>卡片</h1>
+
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">CARD TITLE</span>
+        <a href="#" class="btn-floating halfway-fab waves-effect waves-light red">
+          <i class="material-icons">add</i>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in soluta impedit magni earum iure numquam sed, eveniet ea
+          veniam sit consequuntur et dolores totam id sunt, ab recusandae quod.
+        </p>
+      </div>
+      <div class="card-action">
+        <a href="">link1</a>
+        <a href="">link2</a>
+      </div>
+    </div>
+
+
+
+    <h1>卡片+图片</h1>
+
+    <div class="card ">
+      <div class="card-image">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-586302.jpg" alt="">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>
+
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti eum impedit voluptate repudiandae dolorum quibusdam vel
+          optio laudantium voluptatem cumque ab velit eius earum quidem adipisci eaque, sunt similique provident. Vel, dolor
+          unde! Ad distinctio minus officia, dolores facere dolorem? Explicabo omnis voluptates qui id alias necessitatibus
+          deleniti ipsum assumenda libero dolore, debitis reprehenderit eaque quo mollitia natus fugit. Assumenda! Dolore
+          animi ducimus blanditiis nisi sequi quibusdam cupiditate unde ullam, id totam tempora dicta. Nostrum, iure in.
+          Eaque distinctio ab, optio porro, quos quis perspiciatis itaque hic, dignissimos numquam tenetur.
+        </p>
+      </div>
+      <div class="card-action">
+        <a class="btn red" href="">This is a Link</a>
+        <a class="btn red" href="">This is a Link</a>
+        <a class="btn red" href="">This is a Link</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2>水平卡片</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-586302.jpg" alt="">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <div class="card-title">
+            CARD TITLE
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto vero excepturi reiciendis libero quasi voluptatem nulla nostrum
+            impedit deserunt. Repudiandae porro ducimus doloribus inventore nisi corporis dolore nostrum at accusamus! Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Iusto vero excepturi reiciendis libero quasi voluptatem nulla
+            nostrum impedit deserunt. Repudiandae porro ducimus doloribus inventore nisi corporis dolore nostrum at accusamus!
+          </p>
+        </div>
+        <div class="card-action">
+          <a class="btn red" href="">This is a Link</a>
+          <a class="btn red" href="">This is a Link</a>
+          <a class="btn red" href="">This is a Link</a>
+        </div>
+      </div>
+
+    </div>
+
+    <h3>CAED PANEL</h3>
+    <div class="card-panel blue darken-2">
+      <span class="white-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perspiciatis iste nam error placeat, expedita modi molestias
+        laudantium asperiores harum totam autem debitis repellendus quas dicta, veniam facilis quaerat praesentium.
+      </span>
+    </div>
+
+    <!-- CHIPS -->
+
+    <h3>CHIPS</h3>
+    <div class="chip">
+      TAG 1
+      <i class="close material-icons">close</i>
+    </div>
+    <div class="chip">
+      TAG 2
+      <i class="close material-icons">close</i>
+    </div>
+
+
+    <!-- 表单 -->
+
+    <h1>forms</h1>
+    <form action="">
+
+      <div class="input-field">
+        <input type="text" id="name">
+        <label for="name" class="active">Name</label>
+      </div>
+      <div class="input-field">
+        <input type="email" id="email" class="validate">
+        <label for="email" class="active">Email</label>
+      </div>
+      <div class="input-field">
+        <textarea type="" id="textarea" class="materialize-textarea"></textarea>
+        <label for="textarea" class="active">Textarea</label>
+      </div>
+
+    </form>
+
+    <h1>
+      进度条
+    </h1>
+    <div class="progress">
+      <div class="determinate" style="width:70%"></div>
+    </div>
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+
+
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 栅格系统 -->
+    <h1>Grid system</h1>
+    <div class="row">
+
+      <div class="col s1">
+        <div class="card-panel grey">1</div>
+      </div>
+      <div class="col s11">
+        <div class="card-panel grey">11</div>
+      </div>
+
+
+      <div class="col s2">
+        <div class="card-panel grey">2</div>
+      </div>
+      <div class="col s10">
+        <div class="card-panel grey">10</div>
+      </div>
+
+      <div class="col s3">
+        <div class="card-panel grey">3</div>
+      </div>
+      <div class="col s9">
+        <div class="card-panel grey">9</div>
+      </div>
+      <div class="col s4">
+        <div class="card-panel grey">4</div>
+      </div>
+      <div class="col s8">
+        <div class="card-panel grey">8</div>
+      </div>
+      <div class="col s5">
+        <div class="card-panel grey">5</div>
+      </div>
+      <div class="col s7">
+        <div class="card-panel grey">7</div>
+      </div>
+
+
+      <div class="col s6">
+        <div class="card-panel grey">6</div>
+      </div>
+      <div class="col s6">
+        <div class="card-panel grey">6</div>
+      </div>
+
+      <div class="col s7">
+        <div class="card-panel grey">7</div>
+      </div>
+      <div class="col s5">
+        <div class="card-panel grey">5</div>
+      </div>
+
+
+
+      <div class="col s8">
+        <div class="card-panel grey">8</div>
+      </div>
+      <div class="col s4">
+        <div class="card-panel grey">4</div>
+      </div>
+
+
+      <div class="col s9">
+        <div class="card-panel grey">9</div>
+      </div>
+      <div class="col s3">
+        <div class="card-panel grey">3</div>
+      </div>
+      <div class="col s10">
+        <div class="card-panel grey">10</div>
+      </div>
+      <div class="col s2">
+        <div class="card-panel grey">2</div>
+      </div>
+      <div class="col s11">
+        <div class="card-panel grey">11</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">1</div>
+      </div>
+
+
+      <div class="col s12">
+        <div class="card-panel grey">12</div>
+      </div>
+
+      <div class="col s1">
+        <div class="card-panel grey">1</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">2</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">3</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">4</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">5</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">6</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">7</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">8</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">9</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">10</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">11</div>
+      </div>
+      <div class="col s1">
+        <div class="card-panel grey">12</div>
+      </div>
+    </div>
+
+    <!-- OFFSETING -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel grey">This div is 12 cols</div>
+      </div>
+      <div class="col s6 offset-s6">
+        <div class="card-panel red">This div is 6 cols offset by 6 偏移 6 个单位</div>
+      </div>
+      <div class="col s6 offset-s3">
+        <div class="card-panel blue">This div is 6 cols offset by 3 偏移 3 个单位</div>
+      </div>
+    </div>
+
+    <!-- PUSH AND PULL -->
+    <h3>
+      左右变换 但是不改变markup结构
+    </h3>
+    <div class="row">
+      <div class="col s7 push-s5">
+        <div class="card-panel grey ">This div is 7 cols width 加入我想让左边是5 但是我想行改变网页结构怎办？ PUSH AND PULL</div>
+      </div>
+      <div class="col s5 pull-s7">
+        <div class="card-panel grey ">This div is 5 cols width</div>
+      </div>
+    </div>
+
+  </div>
+  <!--./container-->
+
+
+
+
+
+
+  <div class="container">
+    <h1>
+      COLORS
+    </h1>
+    <div class="red white-text">颜色类</div>
+    <div class="blue white-text">颜色类</div>
+    <div class="purple lighten-3 white-text">颜色类</div>
+    <div class="purple darken-3 white-text">颜色类</div>
+
+    <h1>按钮</h1>
+    <button class="btn"> READMORE </button>
+    <button class="btn waves-effect"> READMORE </button>
+    <button class="btn waves-effect btn-large"> READMORE </button>
+    <button class="btn waves-effect btn-large red darken-3 white-text"> READMORE </button>
+    <h1>ICONS</h1>
+
+    <button class="btn waves-effect btn-large yellow black-text">
+      <i class="material-icons left ">cloud</i> READMORE </button>
+
+
+    <a href="#" class="btn-floating red btn-large">
+      <i class="large material-icons">add</i>
+    </a>
+
+    <!-- fixed action btn -->
+
+    <div class="fixed-action-btn ">
+      <a href="#" class="waves-effect btn-floating red btn-large">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li>
+          <a href="#" class="btn-floating green btn-large">
+            <i class="large material-icons">insert_chart</i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating blue btn-large">
+            <i class="large material-icons">format_quote</i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating brown btn-large">
+            <i class="large material-icons">publish</i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating yellow btn-large">
+            <i class="large material-icons">insert_chart</i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating orange btn-large">
+            <i class="large material-icons">attach_file</i>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <!-- flat btn -->
+
+    <a href="#" class="waves-effect waves-teal btn-flat">
+      button
+    </a>
+
+    <h1>HELPERS</h1>
+    <!-- 对齐方式 -->
+
+    <h5 class="left-align red">left</h5>
+    <h5 class="center-align blue">center</h5>
+    <h5 class="right-align orange">right</h5>
+
+    <!-- 浮动 -->
+
+    <div class="left red">左浮动
+    </div>
+    <div class="right blue">右浮动
+    </div>
+    <div class="clearfix">
+
+      <!-- 隐藏内容 -->
+      <!-- 手机与平板的界限就是993附近 -->
+      <div class="blue hide">隐藏</div>
+      <div class="blue hide-on-small-only">小设备隐藏</div>
+      <div class="blue hide-on-med-only">平板设备隐藏</div>
+      <div class="blue hide-on-med-and-down">平板设备以及该设备更小的屏幕隐藏</div>
+      <div class="blue hide-on-med-and-up">平板设备以及该设备更大的屏幕隐藏</div>
+      <div class="blue hide-on-large-only">桌面隐藏</div>
+
+
+      <!-- 隐藏多余的 -->
+      <h3 class=" truncate">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptas consectetur tempora exercitationem, nesciunt fuga
+        iure. Reiciendis tenetur incidunt, at repellendus pariatur, dolores facilis exercitationem perspiciatis dolorem culpa
+        eius quod!
+      </h3>
+      <!-- 特效 -->
+
+      <div class="red white-text hoverable">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ipsa temporibus explicabo suscipit eum! Magni, ipsa similique
+        ratione culpa ullam voluptatum ea eum voluptas totam quaerat perferendis recusandae laudantium mollitia.
+      </div>
+      <br>
+      <div class="blue white-text _pulse">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, expedita incidunt doloremque perspiciatis natus officia aperiam
+        delectus assumenda iste laborum fugit nobis numquam quidem reprehenderit distinctio ut excepturi, fugiat id!
+      </div>
+
+    </div>
+
+    <!-- 阴影 -->
+
+    <div class="z-depth-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident quaerat ut non aspernatur minima quasi nesciunt a
+      iste, distinctio aperiam corrupti debitis hic! Ad dignissimos deserunt accusamus maiores magnam.
+    </div>
+    <br>
+    <div class="z-depth-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident quaerat ut non aspernatur minima quasi nesciunt a
+      iste, distinctio aperiam corrupti debitis hic! Ad dignissimos deserunt accusamus maiores magnam.
+    </div>
+    <br>
+    <div class="z-depth-3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident quaerat ut non aspernatur minima quasi nesciunt a
+      iste, distinctio aperiam corrupti debitis hic! Ad dignissimos deserunt accusamus maiores magnam.
+    </div>
+    <br>
+    <div class="z-depth-4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident quaerat ut non aspernatur minima quasi nesciunt a
+      iste, distinctio aperiam corrupti debitis hic! Ad dignissimos deserunt accusamus maiores magnam.
+    </div>
+    <br>
+    <div class="z-depth-5">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem provident quaerat ut non aspernatur minima quasi nesciunt a
+      iste, distinctio aperiam corrupti debitis hic! Ad dignissimos deserunt accusamus maiores magnam.
+    </div>
+    <br>
+
+    <!-- 浮动文字 -->
+
+    <p class="flow-text">
+      <h1 class="flow-text">这里和下面的的文字大小是响应式的</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa culpa modi autem dignissimos consectetur dolor vero,
+      minima magnam nobis ducimus necessitatibus doloremque quis laborum? Incidunt adipisci sed laudantium aut.
+    </p>
+
+    <!-- 响应式图片  -->
+
+    <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-259819.jpg" alt="" class="z-depth-1 responsive-img">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!--./container-->
+
+
+  <!-- 导航栏 -->
+
+
+
+
+
+
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+    $('.button-collapse').sideNav();
+  </script>
+
+</body>
+
+</html>

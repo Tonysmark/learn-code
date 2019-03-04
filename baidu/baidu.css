@@ -1,0 +1,236 @@
+@-moz-document url-prefix("https://www.baidu.com/s") {
+    body {
+        background-color: #f6f9fa;
+    }
+    #rs,
+    #page>* {
+        background-color: rgba(0, 0, 0, 0.001) !important;
+    }
+    #head {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+    #u {
+        visibility: hidden;
+    }
+    /* 头部剧中 */
+    #head .head_wrapper {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    #head .headBlock {
+        /* 	margin-left: 0px !important; */
+        display: none !important;
+        justify-content: center !important;
+    }
+    /* 屏蔽推荐 */
+    .rrecom-btn-parent {
+        display: none;
+    }
+    #s_tab {
+        display: flex !important;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    #s_tab>*:hover {
+        background-color: #4791ffc9;
+        transition: background-color .3s;
+    }
+    #s_tab b {
+        border-bottom: 0;
+    }
+    /* 修改输入框样式 */
+    .bg,
+    .s_ipt_wr,
+    .quickdelete-wrap {
+        border-top: 0px;
+        border-left: 0px;
+    }
+    .s_ipt_wr,
+    .ipthover {
+        border-bottom: 1px solid #3385ff !important;
+    }
+    bg s_btnhover {
+        background-color: #2bbbad !important;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2) !important;
+    }
+    .s_btn {
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        transition: .3s ease-out;
+        border: 0px;
+    }
+    .bg,
+    .s_btn_wr {
+        margin-left: 5px;
+    }
+    /* 优化搜索结果 */
+    em {
+        background-color: yellow;
+        font-style: normal;
+        color: #00c;
+    }
+    h3 {
+        text-decoration: none;
+    }
+    #content_right {
+        visibility: hidden;
+    }
+    .search_tool_conter {
+        display: none;
+    }
+    .nums {
+        visibility: hidden;
+    }
+    .c-container table {
+        margin-left: 0px;
+    }
+    #container {
+        margin: 0 auto;
+    }
+    .c-recommend {
+        border: 0;
+    }
+    .container_l #content_right {
+        visibility: hidden;
+    }
+    .c-container {
+        background-color: #fff;
+        /*     border-left: 2px solid #3385ff;
+    border-right: 2px solid #3385ff; */
+        border-radius: 2px;
+        padding-left: 130px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        width: 900px;
+        margin-top: 20px;
+    }
+    /* .c-container:hover {
+    transform: translate3d(0, -5px, 0);
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 00px 40px rgba(168, 182, 191, .7);
+} */
+    /* 结果字体 */
+    a:-webkit-any-link {
+        text-decoration: none;
+    }
+    a em {
+        text-decoration: none;
+    }
+    h3 {
+        text-decoration: none;
+    }
+    /* 结果宽度 */
+    .c-abstract,
+    .c-offset {
+        width: 700px;
+    }
+    .subLink_factory {
+        margin-left: 0px;
+        width: 700px;
+    }
+    /* 输入框阴影效果 */
+    #head.s_down {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    }
+    /* 尾部局中*/
+    #rs,
+    #page {
+        margin-top: 120px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #rs table a {
+        text-decoration: none;
+        text-align: center;
+    }
+    .tt {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    /* 尾部推荐居中 */
+    #rs th {
+        text-align: center;
+    }
+    #rs table {
+        text-align: center;
+        margin-left: 30px;
+    }
+    #page {
+        margin-top: 60px;
+        padding-left: 0px;
+        /*     margin-left: -40px; */
+    }
+    #page .c-icon {
+        visibility: hidden;
+    }
+    #foot {
+        visibility: hidden;
+    }
+    #page .pc,
+    #page .n {
+        color: #fff;
+        background-color: rgb(51, 133, 255) !important;
+        border: 0px;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px !important;
+        border-radius: 2px;
+    }
+    #page .n:hover,
+    #page .pc:hover {
+        transition: 0.3s ease-out;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px !important;
+        background: rgba(51, 133, 255, 0.7) !important;
+        border: 0px !important;
+    }
+    /*========= Ad Block ========= */
+    div[style*="visibility:visible"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+    }
+    body>div[style*='position: absolute;'],
+    body>div[style*='position: fixed;'],
+    #contnet_left>div[id="10"]~div[id="1"],
+#contnet_left>div[id="20"]~div[id="1"],
+#contnet_left>div[id="40"]~div[id="1"],
+#contnet_left>div[id="60"]~div[id="1"],
+#contnet_left>div[id="80"]~div[id="1"],
+#contnet_left>div[id="100"]~div[id="1"],
+#content_left>div:not([id]) {
+    display: none !important;
+}
+
+#content_left>div[style*="display:block !important"] {
+    position: absolute !important;
+    top: -5000px !important;
+}
+
+/* 屏蔽广告 */
+
+#3001,
+#3002,
+#3003,
+#4001,
+#5001,
+#5002,
+#5003,
+#5004,
+.result-op,
+.xpath-log {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+#5001,
+#5002,
+#5003,
+#5004 {
+    display: none !important;
+    width: 0px;
+    height: 0px;
+}
+
+}

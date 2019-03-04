@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function refresh(){
+      window.location.reload();
+    }
+    setTimeout('refresh()', 10000);
+  </script>
+  <style>
+  blockquote{
+    background: rgba(0, 0, 0, .1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-left: 10px solid rgb(29, 119, 223);
+    border-radius: 3px;
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: '\201C' '\201D' '\2018' '\2019';
+
+  }
+  blockquote:before{
+    color: #000;
+    content: open-quote;
+    font-size:4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em; 
+
+  }
+  blockquote p{
+    display: inline;
+  }
+  
+  </style>
+</head>
+
+<body>
+<div class="examlpe">
+  <blockquote>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, animi? Modi sed deleniti numquam, temporibus optio, laudantium reprehenderit quasi explicabo expedita, dicta neque tenetur suscipit placeat et unde cupiditate animi.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, animi? Modi sed deleniti numquam, temporibus optio, laudantium reprehenderit quasi explicabo expedita, dicta neque tenetur suscipit placeat et unde cupiditate animi.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, animi? Modi sed deleniti numquam, temporibus optio, laudantium reprehenderit quasi explicabo expedita, dicta neque tenetur suscipit placeat et unde cupiditate animi.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, animi? Modi sed deleniti numquam, temporibus optio, laudantium reprehenderit quasi explicabo expedita, dicta neque tenetur suscipit placeat et unde cupiditate animi.
+  </blockquote>
+</div>
+</body>
+</html>

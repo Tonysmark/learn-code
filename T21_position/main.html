@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      height: 110%;
+    }
+
+    .wrap {
+      width: 600px;
+      background-color: rgba(0, 0, 0, 0.452);
+    }
+
+    .content {
+      border: 1px solid #ccc;
+      width: 500px;
+      position: absolute;
+      top: 300px;
+      left: 300px;
+    }
+
+    .container {
+      background-color: rgba(204, 204, 204, 0.445);
+      width: 500px;
+      padding: 30px;
+      border: 1px solid #999;
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }
+
+    .tag {
+      border: 1px solid #ccc;
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+    }
+    .tag2{
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>
+      基准位置
+    </h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste officiis laudantium, corrupti harum deleniti unde quaerat,
+    delectus, neque at reprehenderit amet dignissimos minus placeat. Alias earum harum ducimus accusamus doloribus.
+    <div class="content">
+      <h4>以页面html为基准绝对定位</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, tenetur? Necessitatibus, soluta autem rerum at excepturi
+      nihil quod perferendis magnam perspiciatis esse, beatae facere non deserunt quisquam adipisci? Iure, quod.
+      <div class="container">
+        <h1>
+          在母元素的基础上定位
+        </h1>
+        <p>并且不会影响到母元素文档流</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolores quaerat rerum quas voluptatem repellat odit aspernatur
+        id, nemo consequuntur porro modi quae illo voluptates tenetur maxime ex inventore! Voluptate!Totam neque libero architecto,
+        beatae debitis quasi id nemo. Dolorem necessitatibus fugiat accusamus quod, itaque earum cum aliquid id sint nulla
+        nobis totam illo ipsum unde minima recusandae? Deserunt, dignissimos.
+      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis repellat, animi reprehenderit itaque error eos,
+      vel maiores perspiciatis unde, praesentium voluptate. Est illo rem alias dicta facilis illum aspernatur.
+    </div>
+  </div>
+
+  <div class="tag">
+    <h1>
+      简书小标签 </h1>
+    <span>position fixed定位 相对窗口的定位</span>
+
+  </div>
+  <div class="tag2">
+    <h1>我以为的定位</h1>
+    <p>
+      abs定位是以HTML为基础定位
+    </p>
+
+  </div>
+
+
+</body>
+
+</html>

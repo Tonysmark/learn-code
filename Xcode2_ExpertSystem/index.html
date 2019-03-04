@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动物识别系统</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--标题栏-->
+    <div class="page-header">
+        <h1>动物识别系统
+            <small>产生式系统应用</small>
+        </h1>
+    </div>
+
+
+    <!--主体框-->
+    <div id="content" class=" container">
+        <!--事实框-->
+        <div id="positive_box" class="container">
+            <h4>请输入动物特征
+                <small>(最多可输入6个)</small>：</h4>
+            <div class="input-group">
+                <span class="input-group-addon">1.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">2.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">3.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">4.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">5.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">6.</span>
+                <input class="fact" type="text" class="form-control">
+            </div>
+            <input class="btn btn-outline-info" type="button" id="distinguish_btn" value="开始识别" onclick="Identify()" />
+        </div>
+
+        <!--结论框-->
+        <div id="conclusion_box" class="">
+            <h4>结论：</h4>
+            <div id="new_facts">
+                <!--用来放置新事实-->
+
+            </div>
+            <div id="conclusion">
+                <!--用来放置最终结果-->
+
+            </div>
+            <!--<p>因为有羽毛，所以是鸟。</p>-->
+            <!--<p>结合以上事实，此动物为海燕。</p>-->
+            <div id="error">
+                <!--用来提示-->
+
+            </div>
+            <input id="clear_all" type="button" class="btn btn-outline-info" value="清空" onclick="Clear_all()" />
+        </div>
+        <div class="rule">
+            <h3>参考规则：</h3>
+            <ul>
+                <a>长颈鹿</a>
+                <li>有蹄动物</li>
+                <li>长腿</li>
+                <li>长脖子</li>
+                <li>有暗斑点</li>
+                <li>黄褐色</li>
+            </ul>
+            <ul>
+                <a>海燕</a>
+                <li>鸟</li>
+                <li>不怕海浪</li>
+            </ul>
+            <ul>
+                <a>斑马</a>
+                <li>有蹄动物</li>
+                <li>有黑色条纹</li>
+            </ul>
+            <ul>
+                <a>老虎</a>
+                <li>哺乳动物</li>
+                <li>食肉动物</li>
+                <li>黄褐色</li>
+                <li>头上有王字</li>
+            </ul>
+            <ul>
+                <a>金钱豹</a>
+                <li>哺乳动物</li>
+                <li>食肉动物</li>
+                <li>黄褐色</li>
+                <li>有斑点</li>
+            </ul>
+            <ul>
+                <a>企鹅</a>
+                <li>不会飞</li>
+                <li>会游泳</li>
+                <li>生活在南极</li>
+                
+            </ul>
+            <ul>
+                <a>鸟</a>
+                <li>长脖子</li>
+                <li>长腿</li>
+                <li>不会飞</li>
+                
+            </ul>
+
+            <p style="padding:5px;"></p>
+
+        </div>
+    </div>
+    <script src="animal_identifier.js"></script>
+    <script src="jquery.min.js"></script>
+</body>
+
+</html>

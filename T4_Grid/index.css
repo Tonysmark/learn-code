@@ -1,0 +1,52 @@
+.site {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto 1fr 3fr;
+    grid-template-areas: "title title title" "main header header" "main sidebar footer";
+}
+
+@media screen and (max-width:800px) {
+    /*当最大宽度在这个数值的时候执行这个大括号内的东西*/
+    .site {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto 1fr 3fr auto;
+        grid-template-areas: "header header " "main title" "main sidebar" "footer footer";
+    }
+}
+
+body {
+    background-color: #ccc;
+}
+
+.site>* {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    border: 1px solid #999;
+    padding: 30px;
+    margin: 30px;
+}
+
+.master-head {
+    padding: 30px;
+    background-color: #fc4053;
+    grid-area: header;
+}
+
+.page-title {
+  background-color: #1795fc;
+    grid-area: title;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+  background-color: rgb(155, 3, 3);
+    grid-area: footer;
+}

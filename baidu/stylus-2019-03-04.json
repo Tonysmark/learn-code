@@ -1,0 +1,187 @@
+[
+	{
+		"installDate": 1532158370901,
+		"name": "baidu",
+		"enabled": true,
+		"sections": [
+			{
+				"code": "\n    body {\n        background-color: #f6f9fa;\n    }\n    #rs,\n    #page>* {\n        background-color: rgba(0, 0, 0, 0.001) !important;\n    }\n    #head {\n        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);\n    }\n    #u {\n        visibility: hidden;\n    }\n    /* 头部剧中 */\n    #head .head_wrapper {\n        display: flex !important;\n        justify-content: space-around !important;\n    }\n    #head .headBlock {\n        /* \tmargin-left: 0px !important; */\n        display: none !important;\n        justify-content: center !important;\n    }\n    /* 屏蔽推荐 */\n    .rrecom-btn-parent {\n        display: none;\n    }\n    #s_tab {\n        display: flex !important;\n        justify-content: center;\n        padding-left: 0px;\n    }\n    .s_tab_inner >*:hover {\n        background-color: #4791ffc9;\n        transition: background-color .3s;\n    }\n    #s_tab b {\n        border-bottom: 0;\n    }\n    /* 修改输入框样式 */\n    .bg,\n    .s_ipt_wr,\n    .quickdelete-wrap {\n        border-top: 0px;\n        border-left: 0px;\n    }\n    .s_ipt_wr,\n    .ipthover {\n        border-bottom: 1px solid #3385ff !important;\n    }\n    bg s_btnhover {\n        background-color: #2bbbad !important;\n        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2) !important;\n    }\n    .s_btn {\n        border-radius: 2px;\n        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);\n        transition: .3s ease-out;\n        border: 0px;\n    }\n    .bg,\n    .s_btn_wr {\n        margin-left: 5px;\n    }\n    /* 优化搜索结果 */\n    em {\n        background-color: yellow;\n        font-style: normal;\n        color: #00c;\n    }\n    h3 {\n        text-decoration: none;\n    }\n    #content_right {\n        visibility: hidden;\n    }\n    .search_tool_conter {\n        display: none;\n    }\n    .nums {\n        visibility: hidden;\n    }\n    .c-container table {\n        margin-left: 0px;\n    }\n    #container {\n        margin: 0 auto;\n    }\n    .c-recommend {\n        border: 0;\n    }\n    .container_l #content_right {\n        visibility: hidden;\n    }\n    .c-container {\n        background-color: #fff;\n        /*     border-left: 2px solid #3385ff;\n    border-right: 2px solid #3385ff; */\n        border-radius: 2px;\n        padding-left: 130px;\n        padding-top: 20px;\n        padding-bottom: 20px;\n        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);\n        width: 900px;\n        margin-top: 20px;\n    }\n    /* .c-container:hover {\n    transform: translate3d(0, -5px, 0);\n    transition: 300ms;\n    transition-timing-function: ease-in-out;\n    box-shadow: 0px 00px 40px rgba(168, 182, 191, .7);\n} */\n    /* 结果字体 */\n    a:-webkit-any-link {\n        text-decoration: none;\n    }\n    a em {\n        text-decoration: none;\n    }\n    h3 {\n        text-decoration: none;\n    }\n    /* 结果宽度 */\n    .c-abstract,\n    .c-offset {\n        width: 700px;\n    }\n    .subLink_factory {\n        margin-left: 0px;\n        width: 700px;\n    }\n    /* 输入框阴影效果 */\n    #head.s_down {\n        box-shadow: 0 0 20px rgba(0, 0, 0, .7);\n    }\n    /* 尾部局中*/\n    #rs,\n    #page {\n        margin-top: 120px;\n        text-align: center;\n        margin: 0 auto;\n    }\n    #rs table a {\n        text-decoration: none;\n        text-align: center;\n    }\n    .tt {\n        margin-bottom: 10px;\n        border-bottom: 1px solid #ccc;\n    }\n    /* 尾部推荐居中 */\n    #rs th {\n        text-align: center;\n    }\n    #rs table {\n        text-align: center;\n        margin-left: 30px;\n    }\n    #page {\n        margin-top: 60px;\n        padding-left: 0px;\n        /*     margin-left: -40px; */\n    }\n    #page .c-icon {\n        visibility: hidden;\n    }\n    #foot {\n        visibility: hidden;\n    }\n    #page .pc,\n    #page .n {\n        color: #fff;\n        background-color: rgb(51, 133, 255) !important;\n        border: 0px;\n        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px !important;\n        border-radius: 2px;\n    }\n    #page .n:hover,\n    #page .pc:hover {\n        transition: 0.3s ease-out;\n        box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 3px 0px, rgba(0, 0, 0, 0.12) 0px 1px 7px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -1px !important;\n        background: rgba(51, 133, 255, 0.7) !important;\n        border: 0px !important;\n    }\n    /*========= Ad Block ========= */\n    div[style*=\"visibility:visible\"] {\n        display: none !important;\n        visibility: hidden !important;\n        opacity: 0;\n        height: 0px;\n        overflow: hidden;\n    }\n    body>div[style*='position: absolute;'],\n    body>div[style*='position: fixed;'],\n    #contnet_left>div[id=\"10\"]~div[id=\"1\"],\n#contnet_left>div[id=\"20\"]~div[id=\"1\"],\n#contnet_left>div[id=\"40\"]~div[id=\"1\"],\n#contnet_left>div[id=\"60\"]~div[id=\"1\"],\n#contnet_left>div[id=\"80\"]~div[id=\"1\"],\n#contnet_left>div[id=\"100\"]~div[id=\"1\"],\n#content_left>div:not([id]) {\n    display: none !important;\n}\n\n#content_left>div[style*=\"display:block !important\"] {\n    position: absolute !important;\n    top: -5000px !important;\n}\n\n/* 屏蔽广告 */\n\n#3001,\n#3002,\n#3003,\n#4001,\n#5001,\n#5002,\n#5003,\n#5004,\n.result-op,\n.xpath-log {\n    visibility: hidden !important;\n    display: none !important;\n}\n\n#5001,\n#5002,\n#5003,\n#5004 {\n    display: none !important;\n    width: 0px;\n    height: 0px;\n}\n\n",
+				"urlPrefixes": [
+					"https://www.baidu.com/baidu?",
+					"https://www.baidu.com/s?"
+				]
+			}
+		],
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"id": 1
+	},
+	{
+		"installDate": 1532158370906,
+		"name": "youku",
+		"enabled": true,
+		"sections": [
+			{
+				"code": ".spv-logo{\n    display:hidden;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"http://v.youku.com/"
+				],
+				"regexps": []
+			}
+		],
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"id": 2
+	},
+	{
+		"installDate": 1532158370909,
+		"name": "youku",
+		"enabled": true,
+		"sections": [
+			{
+				"code": ".spv-logo{\ndisplay:none !important;\n}",
+				"urls": [],
+				"urlPrefixes": [
+					"http://v.youku.com/v"
+				],
+				"domains": [],
+				"regexps": []
+			}
+		],
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"id": 3
+	},
+	{
+		"installDate": 1533033938928,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "mp.weixin.qq.com",
+		"sections": [
+			{
+				"code": "txpdiv .txp_recommend_content {\n    display: none !important;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"https://mp.weixin.qq.com/s?"
+				],
+				"regexps": []
+			}
+		],
+		"id": 4
+	},
+	{
+		"installDate": 1533915886504,
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/45543.json",
+		"md5Url": "https://update.userstyles.org/45543.md5",
+		"url": "http://userstyles.org/styles/45543",
+		"originalMd5": "b2fb43de9d3c4f4b9824b102c9bb8318",
+		"sections": [
+			{
+				"code": ".split, .snippet {font-size: 12px !important }\n#functions {\n    font-size:13px;\n}\n/* img{\n    height:100px\n} */\n#I_mid {\n    color: #000;\n    background: #263238 url(bgh.png) 0 0 repeat-y;\n}\n#I_main {\n    background-color: #263238;\n}\n* {\n    color:#64a964;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"www.cplusplus.com"
+				],
+				"regexps": []
+			}
+		],
+		"name": "爱护残疾人士",
+		"originalDigest": "5b1bb9bdc7593e3a965fe670eabc8765d4903968",
+		"id": 18
+	},
+	{
+		"installDate": 1534577062241,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "tu11.com",
+		"sections": [
+			{
+				"code": ".container {\n/*     width: 90% !important; */\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"tu11.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 19
+	},
+	{
+		"installDate": 1534913801313,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "jb51.net",
+		"sections": [
+			{
+				"code": "*{\n    font-size:17px;}\n.docText{\n    font-size:18px\n}\npre{\n    font-size:18px;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"jb51.net"
+				],
+				"regexps": []
+			}
+		],
+		"id": 20
+	},
+	{
+		"installDate": 1537327284557,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "icourse163.org",
+		"sections": [
+			{
+				"code": ".g-wrap .f-cb {\n\tdisplay: flex;\n\tjustify-content: flex-start;\n}\n.g-sd1 {\n\tdisplay: none;\n}\n.g-mn1c {\n\tmargin: 0;\n\tpadding: 20px 40px;\n\twidth: 900px;\n}\n\n/* .bbg{\n\twidth:100%;\n\theight:220% !important;\n} */\n.ux-video-player {\n\theight: 140%;\n}\n.u-edu-h5player-pcdisplay .bbg {\n\n\tbackground: #fff !important;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"icourse163.org"
+				],
+				"regexps": []
+			}
+		],
+		"id": 21
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1546963807860,
+		"name": "liaoxuefeng.com",
+		"sections": [
+			{
+				"code": ".x-main-content p {\n\tfont-size: 16px;\n}\ncode {\n\tfont-family: sans-seif;\n\tfont-size: 15px;\n}",
+				"domains": [
+					"liaoxuefeng.com"
+				]
+			}
+		],
+		"id": 22
+	}
+]

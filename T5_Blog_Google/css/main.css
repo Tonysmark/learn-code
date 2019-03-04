@@ -1,0 +1,41 @@
+.container{
+  width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+h1{
+  margin-left: 30px;
+  padding: 0;
+  margin-top: 110px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 70px;
+  font-weight: bold;
+}
+.nav{
+  margin-left: 42px;
+  margin-top: 260px;
+}
+.nav div{
+  font-size: 11px;
+  float: left;
+  width: 20%;
+  padding: 0;
+  margin-right: -20px;
+}
+.nav a{
+  font-family: Microsoft YaHei UI ;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+.home a{
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 25px;
+  background: #2963FF;
+  border: 1px solid #2963FF;
+  border-radius: 40px;
+  box-shadow: 0px 5px 20px rgba(41, 99, 255, 0.3);
+}
+.work,.whoami,.touch {
+  font-weight: lighter;
+}
