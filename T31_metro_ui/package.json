@@ -1,9 +1,0 @@
-{
-  "name": "T31_metro_ui",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "metro4": "^4.2.36"
-  }
-}

@@ -1,4 +1,5 @@
-==Note: 学习笔记就在这里写,不同目录用 h2+分隔符分开==
+==Note: 学习笔记就在这里写,不同目录用 h2 + 分隔符分开==
+==Front end only==
 
 ## baidu stylus
 
@@ -36,11 +37,26 @@
 - clear:both 这个我之前一直都没有注意到,一个盒子内部有两个小盒子，小盒子分别左右浮动，由于浮动所以大盒子高度限制无法撑开，这时候就需要再这两个小盒子下创建一个清除浮动的类。
 
 ![float浮动产生与清除案例截图](README.assets/1_130305160943_1.png)
-
-
 ![使用clear清除浮动案例截图图文分析](README.assets/1_130305161106_1.png)
 
 ----
 
-## T2
+## T3
+
+#### 实战网格布局
+
+#### 问题记录
+
+1. VScode css无法向外引用库 reset.css必须在本文件夹？
+2. grid布局在大方向上，比如说整体框架上做布局结构，小结构并不合适，代码量反而会增多。
+
+> 所以我认为结合grid和Flex最好。
+
+参考实例：
+
+![](http://image.woshipm.com/wp-files/2014/01/32ff9c0df8f81f6744447768999de61d3.jpg)
+
+![](http://image.woshipm.com/wp-files/2014/01/eecfbe03b002efe3fc7d8ea03bf1be573.jpg)
+
+![](http://img.sj33.cn/uploads/allimg/201407/15442W331-0.jpg)
 

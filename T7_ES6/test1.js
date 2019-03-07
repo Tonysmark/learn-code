@@ -1,3 +1,5 @@
+// import { resolve } from "path";
+
 // const request = require("superagent");
 // const cheerio = require("cheerio");
 
@@ -45,21 +47,32 @@
 // buffer.forEach((e,i)=>{
 //     console.log(i,e)
 // })
-const fs = require("fs");
-const superagent = require("superagent");
-const cheerio = require("cheerio");
-async function page() {
-  const page = await superagent.get("https://movie.douban.com/subject_search?search_text=%E6%88%98%E6%96%97%E5%A4%A9%E4%BD%BF&cat=1002");
-  let body = cheerio.load(page.text);
-  fs.open("res.html", "w", (err, fd) => {
-    if (err) {
-      console.log(err);
-    } else {
-      fs.writeFile(fd, body, err => {
-        if (err) throw err;
-        console.log("successed");
-      });
-    }
-  });
+// const fs = require("fs");
+// const superagent = require("../node_modules/superagent");
+// const cheerio = require("../node_modules/cheerio");
+// async function page() {
+//   const page = await superagent.get("https://movie.douban.com/subject_search?search_text=%E6%88%98%E6%96%97%E5%A4%A9%E4%BD%BF&cat=1002");
+//   let body = cheerio.load(page.text);
+//   fs.open("res.html", "w", async (err, fd) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       await fs.writeFile(fd, body, err => {
+//         if (err) throw err;
+//         console.log("successed");
+//       });
+//     }
+//   });
+// }
+// page();
+
+function asyn1() {
+  console.log('function 1 start')
+   asyn2();
+  console.log('function 1 end')
 }
-page();
+function asyn2() {
+  console.log('function 2')
+}
+asyn1()
+console.log("script don't blone anyone")
