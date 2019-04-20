@@ -1,0 +1,60 @@
+html{
+  height: 100%;
+  overflow: hidden;
+}
+body{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: blackjack;
+}
+header{  // TODO: VW 与 px 有什么区别 em rem 有什么区别
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30vw 0 5vw;
+  position: relative;
+  transform-style: inherit;;
+  h1{
+    font-size: 4rem;
+    margin-top: -100px;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  &,&:before{
+    background: 50% 50% / cover;
+    }
+    &:before{
+      background-image: url(./wallhaven-751188.jpg);
+      background-size: cover;
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(2);
+      min-height: 100vh;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      content:"";
+    }
+    *{
+      background-color: rgba(0,0,0,0.3);
+      font-weight: normal;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      margin: 0;
+      padding: 1em 0;
+    }
+}
+@font-face{
+  font-family: blackjack;
+  src:url(./blackjack.otf)
+}

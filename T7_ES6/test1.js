@@ -66,13 +66,13 @@
 // }
 // page();
 
-function asyn1() {
-  console.log('function 1 start')
-   asyn2();
-  console.log('function 1 end')
-}
-function asyn2() {
-  console.log('function 2')
-}
-asyn1()
-console.log("script don't blone anyone")
+let person = {
+  fname: "花花",
+  lname: "王",
+  fullname: function(){
+    () => {
+      console.log(this);
+    }
+  }
+};
+// console.log(person.fullname(),'out')

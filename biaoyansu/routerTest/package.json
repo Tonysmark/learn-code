@@ -1,0 +1,11 @@
+{
+  "name": "routerTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "materialize-css": "^1.0.0",
+    "vue": "^2.6.2",
+    "vue-router": "^3.0.2"
+  }
+}
