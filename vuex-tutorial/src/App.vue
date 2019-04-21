@@ -1,32 +1,29 @@
 <template>
   <div id="app">
-    <nav class="teal accent-4">
-      <div class="nav-wrapper  container">
-        <img src="./assets/logo.png" alt class="brand-logo center">
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li>
-            <router-link to="/">主页</router-link>
-          </li>
-          <li>
-            <router-link to="/about">关于</router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-      <router-view/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </div>
+    <router-view />
   </div>
 </template>
-<script>
-import "../node_modules/materialize-css/dist/js/materialize.min.js";
-export default {};
-</script>
+
 <style lang="less">
-@import url("../node_modules/materialize-css/dist/css/materialize.min.css");
 #app {
-  .brand-logo {
-    width: 60px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
   }
 }
 </style>
