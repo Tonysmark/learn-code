@@ -13,12 +13,10 @@ const actions = {
   // 获取网络流的请求 组件中调用
   async fetchTodos({ commit }) {
     // commit 解构赋值  这里现在还不知道是什么 因为还没有从mutation提交
-
     const response = await axios.get(baseURL);
     // 向mutaition提交数据
     commit("setTodos", response.data);
   },
-
   async addTodo({ commit }, title) {
     // 添加新的todo组件中调用
     // 这里的 title 在组件中调用, 从组件中 data 里获取
