@@ -7,6 +7,8 @@
     <less5></less5>
     <less6></less6>
     <less7></less7>
+    <less7></less7>
+    <less7></less7>
     <less8 msg="yoooooooooooo" username="whh" @show-balance="show_balance=true"></less8>
     <div v-if="show_balance">您的余额: $98</div>
   </div>
