@@ -1,28 +1,28 @@
 {
-  "name": "learn-code",
-  "version": "1.0.0",
-  "description": "重新整理前端学习笔记",
-  "main": "",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tonysmark/learn-code.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tonysmark/learn-code/issues"
-  },
-  "homepage": "https://github.com/Tonysmark/learn-code#readme",
-  "devDependencies": {
-    "animate.css": "^3.7.0",
-    "cheerio": "^1.0.0-rc.2",
-    "jquery": "^3.4.1",
-    "metro4": "^4.2.38",
-    "superagent": "^4.1.0"
-  },
-  "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
-  }
+	"name": "learn-code",
+	"version": "1.0.0",
+	"description": "重新整理前端学习笔记",
+	"main": "",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Tonysmark/learn-code.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Tonysmark/learn-code/issues"
+	},
+	"homepage": "https://github.com/Tonysmark/learn-code#readme",
+	"devDependencies": {
+		"animate.css": "^3.7.0",
+		"cheerio": "^1.0.0-rc.2",
+		"jquery": "^3.4.1",
+		"metro4": "^4.2.38",
+		"superagent": "^4.1.0"
+	},
+	"dependencies": {
+		"materialize-css": "^1.0.0-rc.2"
+	}
 }
