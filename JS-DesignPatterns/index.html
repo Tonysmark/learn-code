@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+    .squire{
+        width:50px;
+        height:50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
+        background-color: #000;
+        color: white;
+        font-size: 150%
+      }
+    </style>
+    <title>设计模式</title>
+  </head>
+  <body>
+    <h1>设计模式</h1>
+    <p>
+      <div class="squire" id="elementObserver1"></div>
+      <hr>
+      <button onclick="model.increment()">Increment</button>
+    </p>
+    <script src="./JS/NumberModel.js"></script>
+    <script src="./JS/ElementObserver.js"></script>
+    <script src="./JS/ConsoleObserver.js"></script>
+    <script src="./JS/HistoryObserver.js"></script>
+    <script>
+    const model = new NumberModel()
+    const elementObserver1 = new ElementObserver('elementObserver1')
+    const consoleObs = new ConsoleObserver()
+    const hisObs = new HistoryObserver()
+    model.addObserver(elementObserver1)
+    model.addObserver(consoleObs)
+    model.addObserver(hisObs)
+    </script>
+  </body>
+</html>
